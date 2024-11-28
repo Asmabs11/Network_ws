@@ -1,0 +1,92 @@
+
+
+.text {
+    margin: 200px;
+    padding: 200px;
+    box-sizing: content-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh; 
+    background-image: url('weather.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.location {
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: #af3444;
+}
+
+#city-input::placeholder {
+    color: #888;
+}
+
+#city-name,
+#temperature,
+#description,
+#humidity {
+    font-size: 1.2em;
+    margin: 10px 0;
+    flex-direction: column;
+}
+
+#temperature {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color:rgb(13, 143, 194);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d82e3c;
+}
